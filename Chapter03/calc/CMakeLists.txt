@@ -2,6 +2,9 @@
 
 project ("calc")
 
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_EXTENSIONS OFF)
+
 include(CheckIncludeFile)
 include(CheckIncludeFileCXX)
 include(CheckLibraryExists)
@@ -27,3 +30,4 @@ if(LLVM_COMPILER_IS_GCC_COMPATIBLE)
 endif()
 
 add_subdirectory ("src")
+add_subdirectory ("src.peg")
